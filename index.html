@@ -92,7 +92,7 @@
 
         <!--Чем занимаемся-->
         <section class="doing">
-            <h2>Чем мы занимаемся</h2>
+            <h2 class="doing-title">Чем мы занимаемся</h2>
             <ul class="doing-img link list">
                 <li class="doing-link link">
                     <img src="./IMG/what-do/box-1.png" alt="box-1" width="370" height="294">
@@ -108,27 +108,40 @@
 
         <!--Команда-->
         <section class="team">
-            <h2>Наша команда</h2>
+            <h2 class="team-title">Наша команда</h2>
             <ul class="team-link list">
                 <li class="team-link link">
-                    <img src=".//IMG/team/igor_demjanenko.png" alt="igor_demijanenko" width="270" height="260">
-                    <h3>Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
+                    <div class="team-card card">
+                        <img class="team-img" src=".//IMG/team/igor_demjanenko.png" alt="igor_demijanenko" width="270"
+                            height="260">
+                        <h3 class="card-name">Игорь Демьяненко</h3>
+                        <p class="card-profetion">Product Designer</p>
+                    </div>
+                </li>
+
+                <li class="team-link link">
+                    <div class="team-card card">
+                        <img class="team-img" src=".//IMG/team/olga_repina.jpg" alt="olga_repina" width="270"
+                            height="260">
+                        <h3 class="card-name">Ольга Репина</h3>
+                        <p class="card-profetion">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="team-link link">
-                    <img src=".//IMG/team/olga_repina.jpg" alt="olga_repina" width="270" height="260">
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
+                    <div class="team-card card">
+                        <img class="team-img" src="./IMG/team/nikolay_tarasov.jpg" alt="nikolay_tarasov" width="270"
+                            height="260">
+                        <h3 class="card-name">Николай Тарасов</h3>
+                        <p class="card-profetion">Marketing</p>
+                    </div>
                 </li>
                 <li class="team-link link">
-                    <img src="./IMG/team/nikolay_tarasov.jpg" alt="nikolay_tarasov" width="270" height="260">
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
-                </li>
-                <li class="team-link link">
-                    <img src="./IMG/team/mikhail_ermakov.jpg" alt="mikhail_ermakov" width="270" height="260">
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
+                    <div class="team-card card">
+                        <img class="team-img" src="./IMG/team/mikhail_ermakov.jpg" alt="mikhail_ermakov" width="270"
+                            height="260">
+                        <h3 class="card-name">Михаил Ермаков</h3>
+                        <p class="card-profetion">UI Designer</p>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -139,26 +152,29 @@
             <!--Контактная информация-->
             <h2 hidden> Контакты</h2>
             <nav>
-                <a lang="en" href="#top" rel="noopener noreferrer">
-                    <p class="logo logo-futer"><span class="logo-first">Web</span>Studio</p>
-                </a>
+                <div class="futer-logo">
+                    <a lang="en" href="#top" rel="noopener noreferrer">
+                        <p class="logo logo-futer"><span class="logo-first">Web</span>Studio</p>
+                    </a>
+                </div>
             </nav>
-            <address>
-                <ul>
-                    <li>
-                        <a href="https://goo.gl/maps/Bj5NZJTDuqSYe3zM9" target="_blank" rel="noopener noreferrer">
-                            г.Киев, пр-т
-                            Леси Украинки, 26
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailtoinfo@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+380961111111">38(096) 11 11 111</a>
-                    </li>
-                </ul>
-            </address>
+            <div class="futer-kontakt">
+                <address>
+                    <ul class="future-link link">
+                        <li class="future-item list">
+                            <a class="future-link link" href="https://goo.gl/maps/Bj5NZJTDuqSYe3zM9" target="_blank"
+                                rel="noopener noreferrer"> г.Киев, пр-т Леси Украинки, 26
+                            </a>
+                        </li>
+                        <li class="future-item list">
+                            <a class="future-mail link" href="mailtoinfo@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="future-item list">
+                            <a class="future-tel link" href="tel:+380961111111">38(096) 11 11 111</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
         </section>
     </footer>
 

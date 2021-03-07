@@ -1,7 +1,7 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-} */
+}
 :root {
   --main-font: 'Roboto';
   --accent-color: '#2196f3';
@@ -10,6 +10,7 @@
 body {
   font-style: var(--text-style);
 }
+
 .link {
   text-decoration: none;
 }
@@ -26,10 +27,12 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 ul,
 ol {
   margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -107,16 +110,10 @@ img {
 /*=======LOGO=========*/
 .logo {
   position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #000000;
 }
 .logo-first {
@@ -127,7 +124,8 @@ img {
 }
 .header-logo {
   margin-right: 93px;
-  position: absolute;
+  margin-top: 24px;
+  margin-left: 215px;
 }
 
 /*========= MAIN============*/
@@ -143,34 +141,31 @@ img {
 }
 /*Эфективные рещения для вашего бизнеса*/
 .text-hero-header {
+  position: absolute;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
-
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
+  height: 120px;
+  width: 696px;
+  left: 452px;
   top: 200px;
 }
 /*button*/
 .main-btn {
+  position: absolute;
   width: 200px;
   height: 50px;
   left: 700px;
-  top: 430px;
+  top: 350px;
   background: #2196f3;
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  position: absolute;
-  margin-top: 30px;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -178,27 +173,15 @@ img {
   color: black;
 }
 
-/*  ={
-
-}=====КНОПКИ НАВИГАЦИИ=======
-.navigation-btn:hover,
-.navigation-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-} */
-
 /* === MAIN ====
 
 ==== HERO HEADER =====*/
-/*=====SECOND SRCTION ОСОБЕННОСТИ======*/
+/*=====SECOND SECTION ОСОБЕННОСТИ======*/
 .features-link {
   display: flex;
 }
 .features-link:last-child {
-  padding-right: 0px;
-}
-.features-box {
-  padding-right: 30px;
+  margin-right: 0px;
 }
 .features {
   position: absolute;
@@ -210,16 +193,42 @@ img {
 .features-box {
   width: 270px;
   height: 101px;
-  padding: 5px;
   box-sizing: border-box;
+  margin-right: 30px;
 }
 .features-titel {
   margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+}
+.features-text {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
 }
 
 /*=====THREE SECTION чем занимаемся ======*/
-.doing-img > li {
-  display: inline;
+.doing-img {
+  display: flex;
+}
+.doing-link {
+  margin-right: 30px;
+}
+.doing-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .doing {
   position: absolute;
@@ -230,9 +239,6 @@ img {
 }
 
 /*=======FOR SECTION команда====*/
-.team-link li {
-  display: inline;
-}
 .team {
   position: absolute;
   width: 1600px;
@@ -241,7 +247,52 @@ img {
   top: 1449px;
   background-color: rgba(245, 244, 250, 1);
 }
-
+.team-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+.team-link {
+  display: flex;
+  width: 1170px;
+  height: 368px;
+}
+.card {
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.team-link:first-child {
+  margin-left: 215px;
+}
+.team-link:last-child {
+  margin-right: 0;
+}
+.team-img {
+  margin-bottom: 30px;
+}
+.card-name {
+  margin-bottom: 10px;
+}
+.card-profetion {
+  font-weight: normal;
+  color: #757575;
+}
 /*======= FOOTER========*/
 .basement {
   position: absolute;
@@ -249,10 +300,40 @@ img {
   height: 252px;
   left: 0px;
   top: 2097px;
-  background-color: rgba(47, 48, 58, 1);
+  background-color: #2f303a;
+  text-decoration: none;
+  list-style: none;
 }
-
-/* ========TEST========= не работает. разобраться*/
-/* .team-link:nth-child(odd) {
-  border: 5px solid black;
-} */
+.futer-logo {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 60px;
+}
+.future-link {
+  width: 231px;
+  height: 81px;
+  margin-top: 111px;
+  margin-left: 215px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.future-link {
+  color: #ffffff;
+  font-style: normal;
+  margin-bottom: 9px;
+  box-sizing: border-box;
+}
+.future-mail {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
+.future-tel {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
