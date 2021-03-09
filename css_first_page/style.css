@@ -9,6 +9,8 @@
 }
 body {
   font-style: var(--text-style);
+  height: 100%;
+  width: 100%;
 }
 
 .link {
@@ -41,6 +43,14 @@ img {
   font-style: normal;
 }
 /*==========Стили для Головы===========*/
+.header-line {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); */
+}
 .navigation-form {
   /* display: flex; */
   position: absolute;
@@ -58,7 +68,6 @@ img {
   color: #000000;
 }
 .navigation-list {
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -261,9 +270,12 @@ img {
   width: 1170px;
   height: 368px;
 }
-.card {
+.team-card {
   width: 270px;
   height: 368px;
+  margin-right: 30px;
+}
+.card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -275,7 +287,6 @@ img {
   text-align: center;
   color: #212121;
   cursor: pointer;
-  margin-right: 30px;
 }
 .team-link:first-child {
   margin-left: 215px;
@@ -298,8 +309,8 @@ img {
   position: absolute;
   width: 1600px;
   height: 252px;
+  top: 1628px;
   left: 0px;
-  top: 2097px;
   background-color: #2f303a;
   text-decoration: none;
   list-style: none;
@@ -336,4 +347,103 @@ img {
 .future-tel {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* =========  PORTFOLIO  ========= */
+
+/* ====NAVIGATION BTN======== */
+.portfolio-nav {
+  position: absolute;
+  width: 611px;
+  height: 54px;
+  left: 495px;
+  top: 174px;
+}
+.portfolio-link {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border-style: none;
+  letter-spacing: 0.03em;
+  margin-right: 8px;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+} */
+.projects {
+  position: absolute;
+  width: 1170px;
+  height: 1272px;
+  top: 262px;
+  left: 215px;
+  right: 215px;
+}
+.project-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-card {
+  margin-bottom: 30px;
+}
+.project-border {
+  border: solid 1px #eeeeee;
+}
+.project-name {
+  font-family: Roboto;
+  font-style: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+.project-content {
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
