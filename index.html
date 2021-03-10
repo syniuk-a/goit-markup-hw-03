@@ -17,19 +17,17 @@
 </head>
 
 
-<body class="font-style">
-    <header class="header-line">
-        <nav class="navigation">
-            <!--ссылка на логотип-->
-            <div class="header-logo">
-                <a lang="en" href="#top" rel="noopener noreferrer">
-                    <p class="logo"><span class="logo-first">Web</span>Studio</p>
-                </a>
-            </div>
+<body>
+    <!-- <header class="container"> -->
+    <header class="header">
+        <div class="container header-container">
+            <a class="logo list link" lang="en" href="./index.html" rel="noopener noreferrer">
+                <span class="logo-web">Web</span><span class="header-logo">Studio</span>
+            </a>
             <!--шапка навигации-->
-            <div class="navigation-form">
+            <nav class="navigation">
                 <ul class="navigation-list list">
-                    <li class="navigation-item">
+                    <li class="navigation-item list">
                         <a class="navigation-link link" href="./index.html">Студия</a>
                     </li>
                     <li class="navigation-item">
@@ -39,143 +37,150 @@
                         <a class="navigation-link link" href="Контакты">Контакты</a>
                     </li>
                 </ul>
-            </div>
-        </nav>
-        <div class="kontakt-line">
-            <a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="tel-link link" href="tel:+380961111111">+38 (096) 11 11 111</a>
+            </nav>
+            <ul class="header-contakt list">
+                <li class="header-contakt-item"><a class="header-contakt-link link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-contakt-item"><a class="header-contakt-link link" href="tel:+380961111111">+38 (096)
+                        11 11
+                        111</a>
+                </li>
+            </ul>
         </div>
     </header>
-
+    <!-- ======ГЛАВНОЕ НАПОЛНЕНИЕ ========== -->
     <main>
-        <!--Hero header-->
-        <section class="font-hero-header">
-            <h1 class="text-hero-header">Эффективные решения <p>для вашего бизнеса</p>
-            </h1>
-            <button class="main-btn" type="button">Заказать услугу</button>
+        <!--======Hero header=====-->
+        <section class="section-hero">
+            <div class="container hero-container">
+                <h1 class="header-title">Эффективные решения для вашего бизнеса</h1>
+                <button class="header-btn" type="button">Заказать услугу</button>
+            </div>
         </section>
 
         <!--Особенности-->
         <section class="features">
-            <h2 hidden> Особенности </h2>
-            <ul class="features-link list">
-                <li class="features-link link">
-                    <div class="features-box">
-                        <h3 class="features-titel">Внимание к деталям</h3>
-                        <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию
-                            позиции.</p>
-                    </div>
-                </li>
-                <li class="features-link link">
-                    <div class="features-box">
-                        <h3 class="features-titel">Пунктуальность</h3>
-                        <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров
-                            влечет за собой.</p>
-                    </div>
-                </li>
-                <li class="features-link link">
-                    <div class="features-box">
-                        <h3 class="features-titel">Планирование</h3>
-                        <p class="features-text">Равным образом консультация с широким активом в значительной степени
-                            обуславливает.</p>
-                    </div>
-                </li>
-                <li class="features-link link">
-                    <div class="features-box">
-                        <h3 class="features-titel">Современные технологии</h3>
-                        <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых
-                            заданий.</p>
-                    </div>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 hidden> Особенности </h2>
+                <ul class="features-link list">
+                    <li class="features-link link">
+                        <div class="features-box">
+                            <h3 class="features-titel">Внимание к деталям</h3>
+                            <p class="features-text">Идейные соображения, а также начало повседневной работы по
+                                формированию
+                                позиции.</p>
+                        </div>
+                    </li>
+                    <li class="features-link link">
+                        <div class="features-box">
+                            <h3 class="features-titel">Пунктуальность</h3>
+                            <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров
+                                влечет за собой.</p>
+                        </div>
+                    </li>
+                    <li class="features-link link">
+                        <div class="features-box">
+                            <h3 class="features-titel">Планирование</h3>
+                            <p class="features-text">Равным образом консультация с широким активом в значительной
+                                степени
+                                обуславливает.</p>
+                        </div>
+                    </li>
+                    <li class="features-link link">
+                        <div class="features-box">
+                            <h3 class="features-titel">Современные технологии</h3>
+                            <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых
+                                заданий.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <!--Чем занимаемся-->
+        <!--======= Чем занимаемся =======-->
         <section class="doing">
-            <h2 class="doing-title">Чем мы занимаемся</h2>
-            <ul class="doing-img link list">
-                <li class="doing-link link">
-                    <img src="./IMG/what-do/box-1.png" alt="box-1" width="370" height="294">
-                </li>
-                <li class="doing-link link">
-                    <img src=".//IMG/what-do/box-2.png" alt="box-2" width="370" height="294">
-                </li>
-                <li class="doing-link link">
-                    <img src=".//IMG/what-do/box-3.png" alt="box-3" width="370" height="294">
-                </li>
-            </ul>
+            <div class="container-doing">
+                <h2 class="doing-title">Чем мы занимаемся</h2>
+                <ul class="doing-img link list">
+                    <li class="doing-link link">
+                        <img src="./IMG/what-do/box-1.png" alt="box-1" width="370" height="294">
+                    </li>
+                    <li class="doing-link link">
+                        <img src=".//IMG/what-do/box-2.png" alt="box-2" width="370" height="294">
+                    </li>
+                    <li class="doing-link link">
+                        <img src=".//IMG/what-do/box-3.png" alt="box-3" width="370" height="294">
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!--Команда-->
         <section class="team">
-            <h2 class="team-title">Наша команда</h2>
-            <ul class="team-link list">
-                <li class="team-link link">
-                    <div class="team-card card">
-                        <img class="team-img" src=".//IMG/team/igor_demjanenko.png" alt="igor_demijanenko" width="270"
-                            height="260">
-                        <h3 class="card-name">Игорь Демьяненко</h3>
-                        <p class="card-profetion">Product Designer</p>
-                    </div>
-                </li>
+            <div class="team-container">
+                <h2 class="team-title">Наша команда</h2>
+                <ul class="team-link list">
+                    <li class="team-link link">
+                        <div class="team-card card">
+                            <img class="team-img" src=".//IMG/team/igor_demjanenko.png" alt="igor_demijanenko"
+                                width="270" height="260">
+                            <h3 class="card-name">Игорь Демьяненко</h3>
+                            <p class="card-profetion">Product Designer</p>
+                        </div>
+                    </li>
 
-                <li class="team-link link">
-                    <div class="team-card card">
-                        <img class="team-img" src=".//IMG/team/olga_repina.jpg" alt="olga_repina" width="270"
-                            height="260">
-                        <h3 class="card-name">Ольга Репина</h3>
-                        <p class="card-profetion">Frontend Developer</p>
-                    </div>
-                </li>
-                <li class="team-link link">
-                    <div class="team-card card">
-                        <img class="team-img" src="./IMG/team/nikolay_tarasov.jpg" alt="nikolay_tarasov" width="270"
-                            height="260">
-                        <h3 class="card-name">Николай Тарасов</h3>
-                        <p class="card-profetion">Marketing</p>
-                    </div>
-                </li>
-                <li class="team-link link">
-                    <div class="team-card card">
-                        <img class="team-img" src="./IMG/team/mikhail_ermakov.jpg" alt="mikhail_ermakov" width="270"
-                            height="260">
-                        <h3 class="card-name">Михаил Ермаков</h3>
-                        <p class="card-profetion">UI Designer</p>
-                    </div>
-                </li>
-            </ul>
+                    <li class="team-link link">
+                        <div class="team-card card">
+                            <img class="team-img" src=".//IMG/team/olga_repina.jpg" alt="olga_repina" width="270"
+                                height="260">
+                            <h3 class="card-name">Ольга Репина</h3>
+                            <p class="card-profetion">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="team-link link">
+                        <div class="team-card card">
+                            <img class="team-img" src="./IMG/team/nikolay_tarasov.jpg" alt="nikolay_tarasov" width="270"
+                                height="260">
+                            <h3 class="card-name">Николай Тарасов</h3>
+                            <p class="card-profetion">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="team-link link">
+                        <div class="team-card card">
+                            <img class="team-img" src="./IMG/team/mikhail_ermakov.jpg" alt="mikhail_ermakov" width="270"
+                                height="260">
+                            <h3 class="card-name">Михаил Ермаков</h3>
+                            <p class="card-profetion">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer class="basement">
-        <section>
+    <footer class="futer">
+        <div class="futer-container">
             <!--Контактная информация-->
-            <h2 hidden> Контакты</h2>
-            <nav>
-                <div class="futer-logo">
-                    <a lang="en" href="#top" rel="noopener noreferrer">
-                        <p class="logo logo-futer"><span class="logo-first">Web</span>Studio</p>
-                    </a>
-                </div>
-            </nav>
-            <div class="futer-kontakt">
-                <address>
-                    <ul class="future-link link">
-                        <li class="future-item list">
-                            <a class="future-link link" href="https://goo.gl/maps/Bj5NZJTDuqSYe3zM9" target="_blank"
-                                rel="noopener noreferrer"> г.Киев, пр-т Леси Украинки, 26
-                            </a>
-                        </li>
-                        <li class="future-item list">
-                            <a class="future-mail link" href="mailtoinfo@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="future-item list">
-                            <a class="future-tel link" href="tel:+380961111111">38(096) 11 11 111</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-        </section>
+            <h2 hidden>Контакты</h2>
+            <a class="logo list link" lang="en" href="./index.html" rel="noopener noreferrer">
+                <span class="futer-logo-web">Web</span><span class="futer-logo">Studio</span>
+            </a>
+            <address class="address">
+                <ul class="futer-link">
+                    <li class="futer-address list">
+                        <a class="futer-kontakt-text link" href="https://goo.gl/maps/Bj5NZJTDuqSYe3zM9" target="_blank"
+                            rel="noopener noreferrer"> г.Киев, пр-т Леси Украинки, 26
+                        </a>
+                    </li>
+                    <li class="futer-address list">
+                        <a class="futer-kontakt link" href="mailtoinfo@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="futer-address list">
+                        <a class="futer-kontakt link link" href="tel:+380961111111">38(096) 11 11 111</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>
