@@ -353,73 +353,90 @@ img {
 }
 
 /* =========  PORTFOLIO  ========= */
-
+.portfolio {
+  margin: 0;
+  padding: 94px 0;
+}
+.portfolio-container {
+  /* display: flex; */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15;
+}
 /* ====NAVIGATION BTN======== */
-/* .portfolio-nav {
-  position: absolute;
-  width: 611px;
-  height: 54px;
-  left: 495px;
-  top: 174px;
-}
-.portfolio-link {
+
+.filter-link {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 0 50px 0;
+  padding: 0;
+  list-style: none;
 }
-.portfolio-btn {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
+.filter-item + .filter-item {
+  margin-left: 9px;
+}
+.filter-btn {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
   background-color: #f5f4fa;
+  color: inherit;
   border-radius: 4px;
-  border-style: none;
-  letter-spacing: 0.03em;
-  margin-right: 8px;
+  border: transparent;
+  padding: 6px 23px;
+  display: block;
 }
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
-
-/* .projects {
-  position: absolute;
-  width: 1170px;
-  height: 1272px;
-  top: 262px;
-  left: 215px;
-  right: 215px;
 }
+
+/* ====== ПРОЭКТЫ ======  */
 .project-link {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: calc(-1 * var(--grid-margin));
+  padding: 0;
+  list-style: none;
 }
-.project-card {
-  margin-bottom: 30px;
+.project-link-item {
+  margin: var(--grid-margin);
+  /* width: calc(100% / 3 - 2 * var(--grid-margin)); */
+  /* border: 1px solid #eeeeee; */
 }
 .project-border {
-  border: solid 1px #eeeeee;
+  border: 1px solid #eeeeee;
+}
+}
+.project-card {
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 0 20px 0;
 }
 .project-name {
-  font-family: Roboto;
-  font-style: 700;
+  display: block;
+  margin: 0 0 4px 0;
+  padding: 0 0 0 24px;
+  font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  margin-top: 20px;
-  margin-left: 24px;
+  letter-spacing: 0.06em;
 }
 .project-content {
-  margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-} */
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 0 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
