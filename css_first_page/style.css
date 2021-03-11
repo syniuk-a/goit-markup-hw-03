@@ -103,8 +103,7 @@ img {
 }
 .header-contakt {
   display: flex;
-  margin: 0px 0px 0px auto;
-  padding: 0;
+  margin: 32px 0px 32px 215px;
 }
 .header-contakt-item {
   margin-left: 50px;
