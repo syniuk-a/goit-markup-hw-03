@@ -253,8 +253,9 @@ img {
 
   /*=======FOR SECTION команда====*/
   .team-container {
+    max-width: auto;
+    
     align-items: center;
-    max-width: 1200px;
     /* max-height: 648px; */
     margin: 0 auto;
     padding: 94px 0;
@@ -270,6 +271,7 @@ img {
   }
   .team-link {
     display: flex;
+    justify-content: center;
   }
   .team-card {
     width: 270px;
